@@ -11,7 +11,7 @@ def generate_qr(domain: str, filename: str = "qrcode.png", logo_path: str = None
     qr = qrcode.QRCode(
         version=2,
         error_correction=qrcode.constants.ERROR_CORRECT_H,  # high correction to tolerate logo overlay
-        box_size=30,
+        box_size=50,
         border=4,
     )
     qr.add_data(domain)
